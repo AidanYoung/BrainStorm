@@ -1,0 +1,261 @@
+<html>
+<title>Brainstorm - free brain games and exersises!</title>
+<link rel="icon" href="assets/logo.png">
+
+<head>
+  <Style>
+    html, body {
+	margin: 0;
+	padding: 0;
+	background: #FAFAFA;
+	font-family: Arial;
+	font-size: 30px;
+  background: linear-gradient(to right, #02FF2DFA, dodgerblue);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#surround {
+  background: white;
+  border-radius: 5px;
+}
+.card-container {
+	width: 100%;
+	max-width: 450px;
+	padding: 16px;
+	margin: 0 auto;
+}
+
+.card {
+	background: #FFF;
+	border-radius: 3px;
+	box-shadow: 0 3px 4px rgba(0,0,0,0.3);
+	margin: 20px 0;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	cursor: pointer;
+}
+</style>
+<Script>
+  'use strict';
+
+  class Cards {
+    constructor () {
+      this.cards = Array.from(document.querySelectorAll('.card'));
+
+      this.onStart = this.onStart.bind(this);
+      this.onMove = this.onMove.bind(this);
+      this.onEnd = this.onEnd.bind(this);
+      this.update = this.update.bind(this);
+      this.targetBCR = null;
+      this.target = null;
+      this.startX = 0;
+      this.currentX = 0;
+      this.screenX = 0;
+      this.targetX = 0;
+      this.draggingCard = false;
+
+      this.addEventListeners();
+
+      requestAnimationFrame(this.update);
+    }
+
+    addEventListeners () {
+      document.addEventListener('touchstart', this.onStart);
+      document.addEventListener('touchmove', this.onMove);
+      document.addEventListener('touchend', this.onEnd);
+
+      document.addEventListener('mousedown', this.onStart);
+      document.addEventListener('mousemove', this.onMove);
+      document.addEventListener('mouseup', this.onEnd);
+    }
+
+    onStart (evt) {
+      if (this.target)
+        return;
+
+      if (!evt.target.classList.contains('card'))
+        return;
+
+      this.target = evt.target;
+      this.targetBCR = this.target.getBoundingClientRect();
+
+      this.startX = evt.pageX || evt.touches[0].pageX;
+      this.currentX = this.startX;
+
+      this.draggingCard = true;
+      this.target.style.willChange = 'transform';
+
+      evt.preventDefault();
+    }
+
+    onMove (evt) {
+      if (!this.target)
+        return;
+
+      this.currentX = evt.pageX || evt.touches[0].pageX;
+    }
+
+    onEnd (evt) {
+      if (!this.target)
+        return;
+
+      this.targetX = 0;
+      let screenX = this.currentX - this.startX;
+      const threshold = this.targetBCR.width * 0.35;
+      if (Math.abs(screenX) > threshold) {
+        this.targetX = (screenX > 0) ?
+             this.targetBCR.width :
+            -this.targetBCR.width;
+      }
+
+      this.draggingCard = false;
+    }
+
+    update () {
+
+      requestAnimationFrame(this.update);
+
+      if (!this.target)
+        return;
+
+      if (this.draggingCard) {
+        this.screenX = this.currentX - this.startX;
+      } else {
+        this.screenX += (this.targetX - this.screenX) / 4;
+      }
+
+      const normalizedDragDistance =
+          (Math.abs(this.screenX) / this.targetBCR.width);
+      const opacity = 1 - Math.pow(normalizedDragDistance, 3);
+
+      this.target.style.transform = `translateX(${this.screenX}px)`;
+      this.target.style.opacity = opacity;
+
+      if (this.draggingCard)
+        return;
+
+      const isNearlyAtStart = (Math.abs(this.screenX) < 0.1);
+      const isNearlyInvisible = (opacity < 0.01);
+
+      if (isNearlyInvisible) {
+
+        if (!this.target || !this.target.parentNode)
+          return;
+
+        this.target.parentNode.removeChild(this.target);
+
+        const targetIndex = this.cards.indexOf(this.target);
+        this.cards.splice(targetIndex, 1);
+
+        this.animateOtherCardsIntoPosition(targetIndex);
+
+      } else if (isNearlyAtStart) {
+        this.resetTarget();
+      }
+    }
+
+    animateOtherCardsIntoPosition (startIndex) {
+
+      if (startIndex === this.cards.length) {
+        this.resetTarget();
+        return;
+      }
+
+      const onAnimationComplete = evt => {
+        const card = evt.target;
+        card.removeEventListener('transitionend', onAnimationComplete);
+        card.style.transition = '';
+        card.style.transform = '';
+
+        this.resetTarget();
+      };
+
+      for (let i = startIndex; i < this.cards.length; i++) {
+        const card = this.cards[i];
+
+        card.style.transform = `translateY(${this.targetBCR.height + 20}px)`;
+        card.addEventListener('transitionend', onAnimationComplete);
+      }
+
+      requestAnimationFrame(_ => {
+        for (let i = startIndex; i < this.cards.length; i++) {
+          const card = this.cards[i];
+
+          card.style.transition = `transform 150ms cubic-bezier(0,0,0.31,1) ${i*50}ms`;
+          card.style.transform = '';
+        }
+      });
+    }
+
+    resetTarget () {
+      if (!this.target)
+        return;
+
+      this.target.style.willChange = 'initial';
+      this.target.style.transform = 'none';
+      this.target = null;
+    }
+  }
+
+  window.addEventListener('load', () => new Cards());
+  </script>
+ 	<title></title>
+</head>
+<body>
+  <div id="img">
+  <br>
+
+  <center><p style="font-size: 70px; color: #F3F3F3 ;   font-family: Helvetica;   text-shadow: 4px 4px 10px black;"><b> Crit thinking and problem solving </b></p><p style="color: white; font-size: 25px;">Below you can select which game you would like to play. Swipe a card to the side to get rid of it.</p>
+
+  <br><br><br>
+
+  </div>
+  <br><br>
+  <style>
+  #img {
+    background: linear-gradient(to right, #039AFB, dodgerblue);
+  width: 100%;
+  height: 420px;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  box-shadow: 0 0px 0px 0 rgba(0, 0,   0, 0.2), 0 15px 20px 0 #C3C3C3;
+
+  }
+  #txt {
+    width: 100%;
+  }
+  </style>
+	<div class="card-container">
+
+
+  	<div class="card" style=" background-image: url('assets/maze.png');
+  background-repeat: no-repeat;
+  background-attachment: absolute;
+  box-shadow: 0 0px 0px 0 rgba(0, 0,   0, 0.2), 0 15px 20px 0 #C3C3C3;
+
+  background-size: 100% 100%;"> <a href="beforemaze.html" style="text-decoration: none; color: black;"><div id="surround"><br>&nbsp;Intellectual  Labyrinth&nbsp;   <br><br></div></a></div>
+
+
+  <div class="card" style=" background-image: url('assets/chess.png');
+  background-repeat: no-repeat;
+  background-attachment: absolute;
+  box-shadow: 0 0px 0px 0 rgba(0, 0,   0, 0.2), 0 15px 20px 0 #C3C3C3;
+
+  background-size: 100% 100%;"> <a href="chesshard.html" style="text-decoration: none; color: black;"><div id="surround"><br>&nbsp;Intellegence Chess!&nbsp;   <br><br></div></a></div>
+
+
+  <div class="card" style=" background-image: url('assets/riddle.jpg');
+  background-repeat: no-repeat;
+  background-attachment: absolute;
+  box-shadow: 0 0px 0px 0 rgba(0, 0,   0, 0.2), 0 15px 20px 0 #C3C3C3;
+
+  background-size: 100% 100%;"> <a href="beforeriddle.html" style="text-decoration: none; color: black;"><div id="surround"><br>&nbsp;Riddle sense &nbsp;   <br><br></div></a></div>
+
+	</div>
+</body>
+</html>

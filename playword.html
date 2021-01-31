@@ -1,0 +1,331 @@
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+
+<div class="container">
+
+
+<style>
+
+
+body {
+
+
+  background: linear-gradient(to right, #039AFB, #21D000);
+
+
+
+overflow: hidden;
+
+
+}
+
+
+body {
+
+
+color: white;
+
+
+}
+
+
+</style>
+
+
+
+
+
+
+<br>
+
+
+<center><h1 style="color: white: font-size: 80px;">Welcome to Halloween Word Guess!</h1></center>
+
+
+<br>
+
+
+<center><p style="color: white: font-size: 62px;">Guess the words below, all words are from your dictonairy.</p></center>
+
+<br>
+
+<center><img src="" style="width: 40%; height: auto; border-radius: 6px;" alt=""></center>
+
+
+
+
+
+<div class="float-right" style="color: white; font-size: 20px;    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px cyan, 0 0 40px cyan, 0 0 50px lime, 0 0 60px royalblue, 0 0 70px darkblue;">Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrong'></span></div>
+
+
+<div class="text-center">
+
+
+
+
+
+
+<p id="wordSpotlight">Guess here</p>
+
+
+<div id="keyboard"></div>
+
+
+<br>
+
+
+<a href="wordhalloween.html"><button style="background-color: white; border-radius: 6px; padding: 16px; border: none; width: 150px; font-size: 20px;">Reset</button></a>
+
+
+</div>
+
+
+</div>
+
+
+<script>
+
+
+var programming_languages = [
+
+
+"digress",
+
+
+"feasible",
+
+
+"mortify",
+
+
+"turmoil",
+
+
+"distort",
+
+
+"fluctuate",
+
+
+"comprehensive",
+
+
+"perception",
+
+
+
+]
+
+
+let answer = '';
+
+
+let maxWrong = 7;
+
+
+let mistakes = 0;
+
+
+let guessed = [];
+
+
+let wordStatus = null;
+
+
+function randomWord() {
+
+
+answer = programming_languages[Math.floor(Math.random() * programming_languages.length)];
+
+
+}
+
+
+function generateButtons() {
+
+
+let buttonsHTML = 'abcdefghijklmnopqrstuvwxyz'.split('').map(letter =>
+
+
+`
+
+
+<button
+
+
+class="btn btn-lg btn-primary m-2"
+
+
+id='` + letter + `'
+
+
+onClick="handleGuess('` + letter + `')"
+
+
+>
+
+
+` + letter + `
+
+
+</button>
+
+
+`).join('');
+
+
+document.getElementById('keyboard').innerHTML = buttonsHTML;
+
+
+}
+
+
+function handleGuess(chosenLetter) {
+
+
+guessed.indexOf(chosenLetter) === -1 ? guessed.push(chosenLetter) : null;
+
+
+document.getElementById(chosenLetter).setAttribute('disabled', true);
+
+
+if (answer.indexOf(chosenLetter) >= 0) {
+
+
+guessedWord();
+
+
+checkIfGameWon();
+
+
+} else if (answer.indexOf(chosenLetter) === -1) {
+
+
+mistakes++;
+
+
+updateMistakes();
+
+
+checkIfGameLost();
+
+
+updateHangmanPicture();
+
+
+
+
+
+
+}
+
+
+}
+
+
+function updateHangmanPicture() {
+
+
+document.getElementById('hangmanPic').src = './images/' + mistakes + '.jpg';
+
+
+}
+
+
+function checkIfGameWon() {
+
+
+if (wordStatus === answer) {
+
+
+document.getElementById('keyboard').innerHTML = 'Correct!! Congratulations! You earned a badge and a new background. Badges can be viewed on the acheivments page. Collect your background <a href="main.html" style="color: tomato;">here</a>';
+
+
+}
+
+
+}
+
+
+function checkIfGameLost() {
+
+
+if (mistakes === maxWrong) {
+
+
+document.getElementById('wordSpotlight').innerHTML = 'The answer was: ' + answer;
+
+
+document.getElementById('keyboard').innerHTML = 'Oh no! That was the wrong answer Game Over!!';
+
+
+}
+
+
+}
+
+
+function guessedWord() {
+
+
+wordStatus = answer.split('').map(letter => (guessed.indexOf(letter) >= 0 ? letter : " _ ")).join('');
+
+
+document.getElementById('wordSpotlight').innerHTML = wordStatus;
+
+
+}
+
+
+function updateMistakes() {
+
+
+document.getElementById('mistakes').innerHTML = mistakes;
+
+
+}
+
+
+function reset() {
+
+
+mistakes = 0;
+
+
+guessed = [];
+
+
+document.getElementById('hangmanPic').src = './images/0.jpg';
+
+
+randomWord();
+
+
+guessedWord();
+
+
+updateMistakes();
+
+
+generateButtons();
+
+
+}
+
+
+document.getElementById('maxWrong').innerHTML = maxWrong;
+
+
+randomWord();
+
+
+generateButtons();
+
+
+guessedWord();
+
+
+</script>

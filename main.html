@@ -1,0 +1,1837 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" dir="ltr">
+
+<link rel="icon" href="assets/logo.png">
+
+<head>
+
+
+<meta charset="utf-8">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+
+
+<title>Brainstorm - free brain games and exersises!</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+
+
+html {
+
+
+scroll-behavior: smooth;
+
+
+}
+
+
+
+body {
+}
+
+
+.responsive-head {
+
+
+width: 45%;
+
+
+height: auto;
+
+
+border-radius: 4px;
+
+
+}
+
+.responsive-head2 {
+
+
+width: 35%;
+
+
+height: auto;
+
+
+border-radius: 4px;
+
+
+}
+
+
+
+
+
+
+.responsive-headlast {
+
+
+width: 30%;
+
+
+height: auto;
+
+
+border-radius: 4px;
+
+
+}
+
+
+
+
+
+
+.responsive-head-side {
+
+
+width: 400px;
+
+
+height: auto;
+
+
+border-radius: 4px;
+
+
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+
+
+
+
+
+.responsive-full {
+
+
+width: 100%;
+
+
+height: auto;
+
+
+border-radius: 4px;
+
+
+}
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+
+
+
+
+<header>
+
+
+<div class="inner-width" id="top">
+
+
+<a href="" class="logo1"><img src="assets/logo.png" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"></a>
+
+
+
+
+
+
+<a href="" class="logo"><img src="assets/logotxt.png"></a>
+
+
+
+
+
+
+<i class="menu-toggle-btn fas fa-bars"></i>
+
+
+
+
+
+
+<nav class="navigation-menu">
+
+
+
+
+
+
+<a href="index.html"><i class="fas fa-home home"></i>Home</a>
+
+
+
+
+
+
+<a href="main.html"><i class="fab fa-buffer works"></i>Games</a>
+
+
+
+
+
+
+<a href=""><i class="fas fa-users team"></i>Featured</a>
+
+
+
+
+
+
+<a href="contact.html"><i class="fas fa-headset contact"></i>Contact</a>
+
+
+
+
+
+
+<a href="search.html"><i class="fas fa-align-left about"></i>Search</a>
+
+
+
+
+
+
+</nav>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</header>
+
+
+
+
+
+
+
+
+
+
+<style>
+
+
+
+
+
+
+*{
+
+
+margin: 0;
+
+
+padding: 0;
+
+
+text-decoration: none;
+
+
+
+
+}
+
+
+
+
+
+
+header{
+
+
+height: 90px;
+
+
+background: linear-gradient(to right,#0EFF64 , dodgerblue);
+
+
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+width: 100%;
+
+
+}
+
+
+
+
+
+
+.inner-width{
+
+
+max-width: 1000px;
+
+
+padding: 0 10px;
+
+
+margin: auto;
+
+
+}
+
+
+
+
+
+
+.logo{
+
+
+float: left;
+
+
+padding: 20px 0;
+
+
+margin-top: 4px;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+.logo img{
+
+
+height: 30px;
+
+
+}
+
+
+.logo1{
+
+
+float: left;
+
+
+padding: 20px 0;
+
+
+margin-top: -10px;
+
+
+}
+
+
+
+
+
+
+.logo1 img{
+
+
+height: 80px;
+
+margin-top: -8px;
+
+border-radius: 4px;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+.navigation-menu{
+
+
+float: right;
+
+
+display: flex;
+
+
+align-items: center;
+
+
+min-height: 90px;
+
+
+}
+
+
+
+
+
+
+.navigation-menu a{
+
+
+margin-left: 10px;
+
+
+color: #ddd;
+
+
+text-transform: uppercase;
+
+
+font-size: 18spx;
+
+
+padding: 12px 20px;
+
+
+border-radius: 4px;
+
+
+transition: .3s linear;
+
+
+}
+
+
+
+
+
+
+.navigation-menu a:hover{
+
+
+background: #fff;
+
+
+color: #2f3640;
+
+
+transform: scale(1.1);
+
+
+}
+
+
+
+
+
+
+.navigation-menu i{
+
+
+margin-right: 8px;
+
+
+font-size: 16px;
+
+
+}
+
+
+
+
+
+
+.home{
+
+
+color: #ff6b6b;
+
+
+}
+
+
+
+
+
+
+.about{
+
+
+color: #56F0FF;
+
+
+}
+
+
+
+
+
+
+.works{
+
+
+color: #feca57;
+
+
+}
+
+
+
+
+
+
+.team{
+
+
+color: #5f27cd;
+
+
+}
+
+
+
+
+
+
+.contact{
+
+
+color: #1dd1a1;
+
+
+}
+
+
+
+
+
+
+.menu-toggle-btn{
+
+
+
+
+
+
+float: right;
+
+
+
+
+
+
+height: 90px;
+
+
+
+
+
+
+line-height: 90px !important;
+
+
+
+
+
+
+
+
+
+
+color: #fff;
+
+
+
+
+
+
+font-size: 26px;
+
+
+
+
+
+
+display: none !important;
+
+
+
+
+
+
+cursor: pointer;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+
+
+
+
+
+
+.menu-toggle-btn{
+
+
+
+
+
+
+display: block !important;
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+.navigation-menu{
+
+
+
+
+
+
+position: fixed;
+
+
+
+
+
+
+width: 100%;
+
+
+
+
+
+
+max-width: 400px;
+
+
+
+
+
+
+background: #172b4d;
+
+
+
+
+
+
+top: 90px;
+
+
+
+
+
+
+right: 0;
+
+
+
+
+
+
+display: none;
+
+
+
+
+
+
+padding: 20px 40px;
+
+
+
+
+
+
+box-sizing: border-box;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navigation-menu::before{
+
+
+
+
+
+
+content: "";
+
+
+
+
+
+
+border-left: 10px solid transparent;
+
+
+
+
+
+
+
+border-bottom: 10px solid #172b4d;
+
+
+
+
+
+
+position: absolute;
+
+
+
+
+
+
+top: -10px;
+
+
+
+
+
+
+right: 10px;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+.navigation-menu a{
+
+
+
+
+
+
+display: block;
+
+
+
+
+
+
+margin: 10px 0;
+
+
+}
+
+
+
+
+
+
+.navigation-menu.active{
+
+
+
+
+
+
+display: block;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+<script>
+
+
+
+
+
+
+$(".menu-toggle-btn").click(function(){
+
+
+$(this).toggleClass("fa-times");
+
+
+$(".navigation-menu").toggleClass("active");
+
+
+});
+
+
+</script>
+
+
+  </head>
+
+
+
+
+
+
+  <body>
+  <div id="img">
+  <br><br>
+
+  <center><p style="font-size: 70px; color: #F3F3F3 ;   font-family: Helvetica;   text-shadow: 4px 4px 10px black;"><b>Games, courses and much more! </b></p>
+  <br>
+  <br><br>
+  </div><div id="main">
+
+  <br><br>
+  <center><div id="hi">
+  <p style="font-size: 22px; ">Take our speed challenge so we can give you feedback on which games are more tageted towards you. Depending on your results our system will recommend games and activites that will vary depending on the results.</p>
+  <style>
+  #img {
+    background: linear-gradient(to right,#0EFF64 , dodgerblue);
+  width: 100%;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  box-shadow: 0 0px 0px 0 rgba(0, 0,   0, 0.2), 0 15px 20px 0 #C3C3C3;
+
+  }
+  #hi {
+    width: 60%;
+  }
+  </style>
+  </p>
+  </div>
+
+
+  <div class="container" style="" id="brehupassediguess">
+    <img src="https://nurseslabs.com/wp-content/uploads/2012/06/Test-Taking-Tips.jpg" id="first" alt="" />
+    <p class="title">Try our Speed challenge!</p>
+    <div class="overlay"></div>
+    <div class="button"><a href="beforeintel.html"> Lets get started! </a></div>
+
+  </div>
+  <style>
+    #main {
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    </style>
+  <br id="pass">  <br></div>
+
+  <center><div id="txtxtxtxtxtxttxtxtxtxtxt">
+
+<br id="bundeled">
+  <style>
+    .container {
+    position: relative;
+    margin-top: 50px;
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border-radius: 4px;
+
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+    border-radius: 5px;
+  }
+
+  .container:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, .3);
+    border-radius: 5px;
+
+  }
+
+  #first {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    left: 0;
+    border-radius: 7px;
+
+  }
+
+  .title {
+    position: absolute;
+    width: 500px;
+    left: 0;
+    top: 120px;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 0 0 13px white, 0 0 15px white;
+
+    z-index: 1;
+    transition: top .5s ease;
+  }
+
+  .container:hover .title {
+    top: 90px;
+  }
+
+  .button {
+    position: absolute;
+    width: 500px;
+    left:0;
+    top: 180px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+  }
+
+  .button a {
+    width: 200px;
+    padding: 12px 48px;
+    text-align: center;
+    color: white;
+    border: solid 2px white;
+    z-index: 1;
+  }
+
+  .container:hover .button {
+    opacity: 1;
+  }
+
+  </style>
+  <center><p style="font-size: 70px; color: #F3F3F3 ;   font-family: Helvetica;   text-shadow: 4px 4px 10px black;"><b>Bundled games</b></p></center>
+<center><div id="txtp">
+<p style="font-size: 19px; color: white;">With our bundeled games, you can work up a storm in certan parts of your brain! We suggest for us to be able to reccomend different bundles to you that you   take our speed challenge. After taking the test we can reccomend different buddles to you.<a href="#intellegncetest" style="font-size: 20px; color: black;">  Try our speed challenge.</a></p>
+
+</div></center>
+<style>
+  #txtp {
+    width: 60%;
+  }
+  </style>
+  <div class="wrapper">
+    <input type="checkbox" id="flip" name="flip-card" />
+
+    <label for="flip">
+      <div class="card">
+        <div class="front">
+          <div class="front-bg">
+
+
+
+          </div>
+          <div class="strip" id="crit"></div>
+
+          <div class="name">
+            <span>Crit thinking & </span>problem solve
+          </div>
+          <div class="click">
+  (click)
+          </div>
+        </div>
+        <div class="back">
+          <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+          <div class="left_back"></div>
+
+
+          <div class="item"><a href="critandproblem.html"><i class="fa fa-gamepad"></i> Game select</a></div>
+
+           <div class="item"><a href="beforemaze.html"><i class="fa fa-play"></i> <b>Start/play first in que</b></a></div>
+
+           <div class="item"><a href="main.html#allgames"><i class="fa fa-level-down-alt"></i> All games</a></div>
+
+        </div>
+      </div>
+    </label>
+
+  </div>
+  <style>
+    * {
+  box-sizing: border-box;
+  }
+  .wrapper {
+  max-width: 50rem;
+  width: 100%;
+  margin: 5rem auto;
+  text-align: center;
+  }
+
+  a {
+  text-decoraition: none;
+  }
+
+  .card {
+  padding: 0;
+  margin: 0 auto;
+  width: 32rem;
+  height: 20rem;
+  display: block;
+  transform-style: preserve-3d;
+  }
+
+  .front,
+  .back {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 3rem rgba(0,0,0,.2),
+    0 0 1rem rgba(0,0,0,.2);
+  }
+
+  #flip {
+  display: none;
+  }
+
+  .front {
+  background-color: tomato;
+  transform: translateZ(2px);
+  color: #cddbea;
+  }
+
+  #flip:not(:checked) + label > .card {
+  transform: rotateY(0deg);
+  transition: transform .25s;
+  }
+
+  #flip:checked + label > .card {
+  transform: rotateY(180deg);
+  transition: transform .25s;
+  }
+
+  .back {
+  background: #fff;
+  transform: translateZ(-2px) rotateY(180deg);
+  border: 1px solid #2d5077;
+  padding-top: 1.7rem;
+  }
+
+  .front-bg {
+  position: absolute;
+  top: -13rem;
+  left: -15rem;
+  color: rgba(255,255,255,.3);
+  }
+  svg {
+  opacity: .4;
+  }
+
+  .name {
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  font-weight: 300;
+  }
+  .name span {
+  font-weight: 800;
+  }
+
+  .click {
+  position: absolute;
+  top: 16rem;
+  left: 0;
+  right: 0;s
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  }
+
+  .strip {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  height: 8rem;
+  background: tomato;
+  opacity: 0;
+  }
+
+  .left_back {
+  background: tomato;
+  position: absolute;
+  top: 0;
+  left: -1rem;
+  bottom: 0;
+  width: 9.5rem;
+  }
+
+    .item {
+  position: relative;
+  margin-left: 3rem;
+  text-align: left;
+  font-size: 1.65rem;
+  font-weight: 700;
+  line-height: 2em;
+  z-index: 100;
+  }
+
+  .item a {
+  color: #434343;
+  transition: color .35s;
+  text-decoration: none;
+  z-index: 100;
+  }
+
+  .item:hover .fa {
+  color: #fff;
+  transition: color .35s;
+  }
+
+  .fa {
+  width: 2em;
+  text-align: center;
+  margin-right: 2em;
+  color: #434343;
+  transition: color .35s;
+  }
+
+  .item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  bottom: 0;
+  background: white;
+  z-index: -100;
+  transition: width 0.35s;
+  }
+
+    .item:hover:before {
+    width: 30rem;
+    transition: width .35s;
+    }
+
+    </style>
+    <div id="f1_container" class="hover" >
+      <div id="f1_card" class="shadow" onclick="toggle()">
+        <div class="front face">
+          &emsp;&emsp;&emsp;&emsp;&emsp;<center><img src="https://masj.be/images/sampledata/articles/memory-game.png"/></center>
+        </div>
+        <div class="back face center">
+          <h1 style="color: white; font-size: 40px;"><b>Memory</b></h1><br>  <p style="font-size: 18px;">With these games, target and imporve your short-term and long-term memory.<br><br><a href="allmemory.html" style="  color: #434343; font-size: 22px;"><b>Level select</b></a><br><a href="memory.html" style="  color: #434343; font-size: 22px;"><b>Start/play</b></a><br><a href="main.html#allgames" style="  color: #434343;font-size: 22px;"><b>All games</b></a></p>
+        </div>
+        </div>
+    </div>
+    <div id="f1_container" class="hover">
+      <div id="f1_card" class="shadow" onclick="toggle()">
+        <div class="front face">
+          <center><h1 style="color: white; font-size: 58px;" ><b>&nbsp;Speed &nbsp; thinking&nbsp;</b> games</h1></center>
+        </div>
+        <div class="back face center">
+        <h1 style="color: white; font-size: 40px;"><b>Speed</b></h1><br>  <p style="font-size: 18px;">With these games, target and imporve your information processing skills.<br><br><a href="allspeed.html" style="  color: #434343; font-size: 22px;"><b>Level select</b></a><br><a href="beforespeed.htmln" style="  color: #434343; font-size: 22px;"><b>Start/play</b></a><br><a href="main.html#allgames" style="  color: #434343;font-size: 22px;"><b>All games</b></a></p>
+        </div>
+        </div>
+    </div>
+    <style>
+
+      #f1_container {
+        position: relative;
+        margin: 30px auto;
+        width: 420px;
+        height: 320px;
+        z-index: 1;
+        cursor:pointer;
+      }
+      #f1_container {
+      -webkit-perspective: 1000px;
+      -moz-perspective: 1000px;
+    -o-perspective: 1000px;
+    perspective: 1000px;
+    }
+    #f1_card {
+      width: 100%;
+      height: 100%;
+      -webkit-transform-style: preserve-3d;
+      -webkit-transition: all 0.3s linear;
+      transform-style: preserve-3d;
+      transition: all 0.3s linear;
+    }
+
+    #f1_container:hover #f1_card {
+      -webkit-transform: rotateY(180deg);
+      -webkit-box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+      box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+      -moz-box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+    }
+
+    .face.front img {
+      position: absolute;
+      width: 300px;
+      height: 200px;
+      display: block;
+      box-sizing: border-box;
+      z-index: 1;
+      margin-left: 50px;
+      margin-top: 33px;
+
+
+    }
+
+    .face img:hover {
+      z-index: -1;
+      opacity: 0;
+    }
+
+    .face.back {
+      display: block;
+      -webkit-transform: rotateY(180deg);
+      padding: 10px;
+      color: #ffffffff;
+      border: 0px solid transparent;
+      text-align: center;
+      background-color: tomato;
+      height: 320px;
+      width: 420px;
+    }
+    </style>
+    <br>
+
+</div></center>
+<Style>
+   #txtxtxtxtxtxttxtxtxtxtxt {
+     background: linear-gradient(to left,#0EFF64 , dodgerblue);
+}
+</style>
+<center><div if="dividkijustwannagotosleep" style="      background-image: url('https://files.gamebanana.com/img/ss/gamefiles/5c2d2283e26c8.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;">
+<br id="allgames">
+<center><p style="font-size: 70px; color: #F3F3F3 ;   font-family: Helvetica;   text-shadow: 4px 4px 10px black;"><b>All games</b></p>
+  <center><div id="txt3">
+    <br>
+    <p style="color:   white; font-size: 20px;">Down below you can find all of the free games that we offer. Click on any of the cards below to select and play that game. If you want to get rid of a card, tap and hold the top corner and swipe to the side. Happy gaming!</p>
+    <br>
+</div>
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+#txt3 {
+  width: 60%; background-color: black; padding: 20px; border-radius:6px;
+}
+    .column {
+      float: left;
+      width: 25%;
+      padding: 0 10px;
+    }
+
+    .row {margin: 0 -5px;}
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
+    </style>
+
+    <div class="card-container">
+      <div class="cardbreh" style=" background-image: url('assets/maze.png');
+    background-repeat: no-repeat;
+    background-attachment: absolute;
+    box-shadow: 0 0px 0px 0 rgba(0, 0,   0, 0.2), 0 15px 20px 0 #C3C3C3;
+
+    background-size: 100% 100%;"> <a href="beforemaze.html" style="text-decoration: none; color: black; font-size: 40px;"><div id="surround"><br>&nbsp;Intellectual  Labyrinth&nbsp;   <br><br></div></a></div>
+
+
+    <div class="card-container">
+      <div class="cardbreh" style=" background-image: url('assets/maze.png');
+    background-repeat: no-repeat;
+    background-attachment: absolute;
+    box-shadow: 0 0px 0px 0 rgba(0, 0,   0, 0.2), 0 15px 20px 0 #C3C3C3;
+
+    background-size: 100% 100%;"> <a href="beforemaze.html" style="text-decoration: none; color: black; font-size: 40px;"><div id="surround"><br>&nbsp;Speed math&nbsp;   <br><br></div></a></div>
+
+    <div class="cardbreh" style=" background-image: url('assets/maze.png');
+  background-repeat: no-repeat;
+  background-attachment: absolute;
+  box-shadow: 0 0px 0px 0 rgba(0, 0,   0, 0.2), 0 15px 20px 0 #C3C3C3;
+
+  background-size: 100% 100%;"> <a href="chesshard.html" style="text-decoration: none; color: black; font-size: 40px;"><div id="surround"><br>&nbsp;Intellegence Chess&nbsp;   <br><br></div></a></div>
+
+
+  <div class="cardbreh" style=" background-image: url('assets/maze.png');
+background-repeat: no-repeat;
+background-attachment: absolute;
+box-shadow: 0 0px 0px 0 rgba(0, 0,   0, 0.2), 0 15px 20px 0 #C3C3C3;
+
+background-size: 100% 100%;"> <a href="beforememory.html" style="text-decoration: none; color: black; font-size: 40px;"><div id="surround"><br>&nbsp;Memory maze&nbsp;   <br><br></div></a></div>
+
+
+
+<div class="cardbreh" style=" background-image: url('assets/maze.png');
+background-repeat: no-repeat;
+background-attachment: absolute;
+box-shadow: 0 0px 0px 0 rgba(0, 0,   0, 0.2), 0 15px 20px 0 #C3C3C3;
+
+background-size: 100% 100%;"> <a href="beforespell.html" style="text-decoration: none; color: black; font-size: 40px;"><div id="surround"><br>&nbsp;Spelling spree&nbsp;   <br><br></div></a></div>
+
+
+
+
+<div class="cardbreh" style=" background-image: url('assets/maze.png');
+background-repeat: no-repeat;
+background-attachment: absolute;
+box-shadow: 0 0px 0px 0 rgba(0, 0,   0, 0.2), 0 15px 20px 0 #C3C3C3;
+
+background-size: 100% 100%;"> <a href="beforemaze.html" style="text-decoration: none; color: black; font-size: 40px;"><div id="surround"><br>&nbsp; Gravity dash&nbsp;   <br><br></div></a></div>
+
+
+    </div>
+    <style>
+
+.card-container {
+  width: 100%;
+  max-width: 450px;
+  padding: 16px;
+  margin: 0 auto;
+}
+
+.cardbreh {
+  background: #FFF;
+  border-radius: 3px;
+  box-shadow: 0 3px 4px rgba(0,0,0,0.3);
+  margin: 20px 0;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+</style>
+<script>
+
+'use strict';
+
+class Cards {
+  constructor () {
+    this.cards = Array.from(document.querySelectorAll('.cardbreh'));
+
+    this.onStart = this.onStart.bind(this);
+    this.onMove = this.onMove.bind(this);
+    this.onEnd = this.onEnd.bind(this);
+    this.update = this.update.bind(this);
+    this.targetBCR = null;
+    this.target = null;
+    this.startX = 0;
+    this.currentX = 0;
+    this.screenX = 0;
+    this.targetX = 0;
+    this.draggingCard = false;
+
+    this.addEventListeners();
+
+    requestAnimationFrame(this.update);
+  }
+
+  addEventListeners () {
+    document.addEventListener('touchstart', this.onStart);
+    document.addEventListener('touchmove', this.onMove);
+    document.addEventListener('touchend', this.onEnd);
+
+    document.addEventListener('mousedown', this.onStart);
+    document.addEventListener('mousemove', this.onMove);
+    document.addEventListener('mouseup', this.onEnd);
+  }
+
+  onStart (evt) {
+    if (this.target)
+      return;
+
+    if (!evt.target.classList.contains('cardbreh'))
+      return;
+
+    this.target = evt.target;
+    this.targetBCR = this.target.getBoundingClientRect();
+
+    this.startX = evt.pageX || evt.touches[0].pageX;
+    this.currentX = this.startX;
+
+    this.draggingCard = true;
+    this.target.style.willChange = 'transform';
+
+    evt.preventDefault();
+  }
+
+  onMove (evt) {
+    if (!this.target)
+      return;
+
+    this.currentX = evt.pageX || evt.touches[0].pageX;
+  }
+
+  onEnd (evt) {
+    if (!this.target)
+      return;
+
+    this.targetX = 0;
+    let screenX = this.currentX - this.startX;
+    const threshold = this.targetBCR.width * 0.35;
+    if (Math.abs(screenX) > threshold) {
+      this.targetX = (screenX > 0) ?
+           this.targetBCR.width :
+          -this.targetBCR.width;
+    }
+
+    this.draggingCard = false;
+  }
+
+  update () {
+
+    requestAnimationFrame(this.update);
+
+    if (!this.target)
+      return;
+
+    if (this.draggingCard) {
+      this.screenX = this.currentX - this.startX;
+    } else {
+      this.screenX += (this.targetX - this.screenX) / 4;
+    }
+
+    const normalizedDragDistance =
+        (Math.abs(this.screenX) / this.targetBCR.width);
+    const opacity = 1 - Math.pow(normalizedDragDistance, 1);
+
+    this.target.style.transform = `translateX(${this.screenX}px)`;
+    this.target.style.opacity = opacity;
+
+    if (this.draggingCard)
+      return;
+
+    const isNearlyAtStart = (Math.abs(this.screenX) < 0.1);
+    const isNearlyInvisible = (opacity < 0.01);
+
+    if (isNearlyInvisible) {
+
+      if (!this.target || !this.target.parentNode)
+        return;
+
+      this.target.parentNode.removeChild(this.target);
+
+      const targetIndex = this.cards.indexOf(this.target);
+      this.cards.splice(targetIndex, 1);
+
+      this.animateOtherCardsIntoPosition(targetIndex);
+
+    } else if (isNearlyAtStart) {
+      this.resetTarget();
+    }
+  }
+
+  animateOtherCardsIntoPosition (startIndex) {
+
+    if (startIndex === this.cards.length) {
+      this.resetTarget();
+      return;
+    }
+
+    const onAnimationComplete = evt => {
+      const card = evt.target;
+      card.removeEventListener('transitionend', onAnimationComplete);
+      card.style.transition = '';
+      card.style.transform = '';
+
+      this.resetTarget();
+    };
+
+    for (let i = startIndex; i < this.cards.length; i++) {
+      const card = this.cards[i];
+
+      card.style.transform = `translateY(${this.targetBCR.height + 20}px)`;
+      card.addEventListener('transitionend', onAnimationComplete);
+    }
+
+    requestAnimationFrame(_ => {
+      for (let i = startIndex; i < this.cards.length; i++) {
+        const card = this.cards[i];
+
+        card.style.transition = `transform 150ms cubic-bezier(0,0,0.31,1) ${i*50}ms`;
+        card.style.transform = '';
+      }
+    });
+  }
+
+  resetTarget () {
+    if (!this.target)
+      return;
+
+    this.target.style.willChange = 'initial';
+    this.target.style.transform = 'none';
+    this.target = null;
+  }
+}
+
+window.addEventListener('load', () => new Cards());
+</script>
+
+    </div></center>
+    <style>
+      #txt {
+        width:50%;
+      }
+      </style>
+      <style>
+        #dividkijustwannagotosleep{
+        background-image: url('https://files.gamebanana.com/img/ss/gamefiles/5c2d2283e26c8.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      </style>      </div></center>
+
+      <center><div id="lastfinally">
+<br id="featured">
+<center><p style="font-size: 70px; color: #F3F3F3 ;   font-family: Helvetica;   text-shadow: 4px 4px 10px black;"><b>Featured</b></p>
+<br>
+<center><div id="txt">
+  <p style="font-size: 20px; color: white;">Each day we have a limited time game availbile for play. This game is our featured game! Down below you can find a link to our featured game of the day.</p>
+<br>
+<a href="#" class="btn">Play our featured game!</a>
+<br><br>
+<center><img src="assets/features.png" alt="" style="width: 500px; height:500px; border-radius: 6px;"></center>
+
+<br>
+</div></center>
+
+<style>
+#lastfinally {
+  background-image: url('https://files.gamebanana.com/img/ss/gamefiles/5c2d22817224b.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-top: -15.5px;
+}
+
+  h1 {
+    font-size: 38px;
+    font-size: 2.375rem;
+    font-style: italic;
+    text-shadow: 1px 1px 0 #f2f2f2, 2px 2px 0 #f2f2f2;
+  }
+
+  a.btn {
+    display: inline-block;
+    margin: 15px 15px 0;
+    padding: .6em 1.1em;
+    font-size: 26px;
+    font-size: 1.625rem;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: royalblue;
+    border-radius: 3px;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-box-shadow: 0 0 0 -2px #cff09e, 0 0 0 -1px #fe4365;
+    box-shadow: 0 0 0 -2px #cff09e, 0 0 0 -1px #fe4365;
+    border: none;
+    -webkit-transition: -webkit-box-shadow .3s;
+    transition: box-shadow .3s;
+  }
+  a.btn:hover, a.btn:focus {
+    -webkit-box-shadow: 0 0 0 2px #cff09e, 0 0 0 4px #ff0364;
+    box-shadow: 0 0 0 2px #cff09e, 0 0 0 4px #ff0364;
+    -webkit-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    transition-timing-function: cubic -bezier(0.6, 4, 0.3, 0.8);
+    -webkit-animation: gelatine 0.5s 1;
+    animation: gelatine 0.5s 1;
+  }
+
+
+  a.btn:active,
+  a.btn-secondary:active {
+    background: #4ecdc4;
+    -webkit-transition-duration: 0;
+    transition-duration: 0;
+    -webkit-box-shadow: 0 0 0 2px #cff09e, 0 0 0 4px #3ac7bd;
+    box-shadow: 0 0 0 2px #cff09e, 0 0 0 4px #3ac7bd;
+  }
+
+
+  @keyframes gelatine {
+    from, to {
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1);
+    }
+
+    25% {
+      -webkit-transform: scale(0.9, 1.1);
+      transform: scale(0.9, 1.1);
+    }
+
+    50% {
+      -webkit-transform: scale(1.1, 0.9);
+      transform: scale(1.1, 0.9);
+    }
+
+    75% {
+      -webkit-transform: scale(0.95, 1.05);
+      transform: scale(0.95, 1.05);
+    }
+
+    from, to {
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1);
+    }
+
+    25% {
+      -webkit-transform: scale(0.9, 1.1);
+      transform: scale(0.9, 1.1);
+    }
+
+    50% {
+      -webkit-transform: scale(1.1, 0.9);
+      transform: scale(1.1, 0.9);
+    }
+
+    75% {
+      -webkit-transform: scale(0.95, 1.05);
+      transform: scale(0.95, 1.05);
+    }
+  }
+  @-webkit-keyframes gelatine {
+    from, to {
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1);
+    }
+
+    25% {
+      -webkit-transform: scale(0.9, 1.1);
+      transform: scale(0.9, 1.1);
+    }
+
+    50% {
+      -webkit-transform: scale(1.1, 0.9);
+      transform: scale(1.1, 0.9);
+    }
+
+    75% {
+      -webkit-transform: scale(0.95, 1.05);
+      transform: scale(0.95, 1.05);
+    }
+
+    from, to {
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1);
+    }
+
+    25% {
+      -webkit-transform: scale(0.9, 1.1);
+      transform: scale(0.9, 1.1);
+    }
+
+    50% {
+      -webkit-transform: scale(1.1, 0.9);
+      transform: scale(1.1, 0.9);
+    }
+
+    75% {
+      -webkit-transform: scale(0.95, 1.05);
+      transform: scale(0.95, 1.05);
+    }
+  }
+
+  </style>
+
+  </div></center>
+
+
+
+
+</div></center>
+<br>
+<body class="body">
+<footer id="red">
+  <h1 class="text">BrainStorm</h1><p class="text2"><a href="main.html#allgames">Games</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="contact.html">Contact</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="main.html#lastfinally">Featured</a></p>
+
+</footer>
+</body>
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Lato:900);
+
+#red{
+  border-width: 15px;
+  background: linear-gradient(to right, lime, cyan);
+  bottom:0;
+  height:100%;
+  width:100%;
+  height:300px;
+  margin-top: -19px;
+  border-top: 10px solid royalblue;
+
+}
+
+.text {
+  color: dodgerblue;
+  font-family: Lato;
+  font-size: 80px;
+  text-align: center;
+}
+
+.text2 {
+  color: royalblue;
+  font-family: Lato;
+  font-size: 25px;
+  text-align: center;
+}
+
+.text3 {
+  color: #424242;
+  font-family: Lato;
+  font-size: 20px;
+  text-align: center;
+}
+
+#page-footer {
+  display: none ;
+}
+</style>
+
+</body>
+</html>

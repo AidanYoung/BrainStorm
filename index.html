@@ -1,0 +1,1334 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" dir="ltr">
+
+
+<head>
+  <link rel="icon" href="assets/logo.png">
+
+
+<meta charset="utf-8">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+
+
+<title>Brainstorm - free brain games and exersises!</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+
+
+html {
+
+
+scroll-behavior: smooth;
+
+
+}
+
+
+
+
+
+
+.responsive-head {
+
+
+width: 45%;
+
+
+height: auto;
+
+
+border-radius: 4px;
+
+
+}
+
+.responsive-head2 {
+
+
+width: 35%;
+
+
+height: auto;
+
+
+border-radius: 4px;
+
+
+}
+
+
+
+
+
+
+.responsive-headlast {
+
+
+width: 30%;
+
+
+height: auto;
+
+
+border-radius: 4px;
+
+
+}
+
+
+
+
+
+
+.responsive-head-side {
+
+
+width: 400px;
+
+
+height: auto;
+
+
+border-radius: 4px;
+
+
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+
+
+
+
+
+.responsive-full {
+
+
+width: 100%;
+
+
+height: auto;
+
+
+border-radius: 4px;
+
+
+}
+
+
+
+
+
+
+body {
+
+
+background-color:white ;
+
+
+}
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+
+
+
+
+<header>
+
+
+<div class="inner-width" id="top">
+
+
+<a href="" class="logo1"><img src="assets/logo.png" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"></a>
+
+
+
+
+
+
+<a href="" class="logo"><img src="assets/logotxt.png"></a>
+
+
+
+
+
+
+<i class="menu-toggle-btn fas fa-bars"></i>
+
+
+
+
+
+
+<nav class="navigation-menu">
+
+
+
+
+
+
+<a href="index.html"><i class="fas fa-home home"></i>Home</a>
+
+
+
+
+
+
+<a href="main.html#allgames"><i class="fab fa-buffer works"></i>Games</a>
+
+
+
+
+
+
+<a href="main.html#featured"><i class="fas fa-users team"></i>Featured</a>
+
+
+
+
+
+
+<a href="contact.html"><i class="fas fa-headset contact"></i>Contact</a>
+
+
+
+
+
+
+<a href="search.html"><i class="fas fa-align-left about"></i>Search</a>
+
+
+
+
+
+
+</nav>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</header>
+
+
+
+
+
+
+
+
+
+
+<style>
+
+
+
+
+
+
+*{
+
+
+margin: 0;
+
+
+padding: 0;
+
+
+text-decoration: none;
+
+
+
+
+}
+
+
+
+
+
+
+header{
+
+
+height: 90px;
+
+
+background: linear-gradient(to right, #039AFB, dodgerblue);
+
+
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+width: 100%;
+
+
+}
+
+
+
+
+
+
+.inner-width{
+
+
+max-width: 1000px;
+
+
+padding: 0 10px;
+
+
+margin: auto;
+
+
+}
+
+
+
+
+
+
+.logo{
+
+
+float: left;
+
+
+padding: 20px 0;
+
+
+margin-top: 4px;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+.logo img{
+
+
+height: 30px;
+
+
+}
+
+
+.logo1{
+
+
+float: left;
+
+
+padding: 20px 0;
+
+
+margin-top: -10px;
+
+
+}
+
+
+
+
+
+
+.logo1 img{
+
+
+height: 80px;
+
+margin-top: -8px;
+
+border-radius: 4px;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+.navigation-menu{
+
+
+float: right;
+
+
+display: flex;
+
+
+align-items: center;
+
+
+min-height: 90px;
+
+
+}
+
+
+
+
+
+
+.navigation-menu a{
+
+
+margin-left: 10px;
+
+
+color: #ddd;
+
+
+text-transform: uppercase;
+
+
+font-size: 18spx;
+
+
+padding: 12px 20px;
+
+
+border-radius: 4px;
+
+
+transition: .3s linear;
+
+
+}
+
+
+
+
+
+
+.navigation-menu a:hover{
+
+
+background: #fff;
+
+
+color: #2f3640;
+
+
+transform: scale(1.1);
+
+
+}
+
+
+
+
+
+
+.navigation-menu i{
+
+
+margin-right: 8px;
+
+
+font-size: 16px;
+
+
+}
+
+
+
+
+
+
+.home{
+
+
+color: #ff6b6b;
+
+
+}
+
+
+
+
+
+
+.about{
+
+
+color: #56F0FF;
+
+
+}
+
+
+
+
+
+
+.works{
+
+
+color: #feca57;
+
+
+}
+
+
+
+
+
+
+.team{
+
+
+color: #5f27cd;
+
+
+}
+
+
+
+
+
+
+.contact{
+
+
+color: #1dd1a1;
+
+
+}
+
+
+
+
+
+
+.menu-toggle-btn{
+
+
+
+
+
+
+float: right;
+
+
+
+
+
+
+height: 90px;
+
+
+
+
+
+
+line-height: 90px !important;
+
+
+
+
+
+
+
+
+
+
+color: #fff;
+
+
+
+
+
+
+font-size: 26px;
+
+
+
+
+
+
+display: none !important;
+
+
+
+
+
+
+cursor: pointer;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+
+
+
+
+
+
+.menu-toggle-btn{
+
+
+
+
+
+
+display: block !important;
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+.navigation-menu{
+
+
+
+
+
+
+position: fixed;
+
+
+
+
+
+
+width: 100%;
+
+
+
+
+
+
+max-width: 400px;
+
+
+
+
+
+
+background: #172b4d;
+
+
+
+
+
+
+top: 90px;
+
+
+
+
+
+
+right: 0;
+
+
+
+
+
+
+display: none;
+
+
+
+
+
+
+padding: 20px 40px;
+
+
+
+
+
+
+box-sizing: border-box;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navigation-menu::before{
+
+
+
+
+
+
+content: "";
+
+
+
+
+
+
+border-left: 10px solid transparent;
+
+
+
+
+
+
+
+border-bottom: 10px solid #172b4d;
+
+
+
+
+
+
+position: absolute;
+
+
+
+
+
+
+top: -10px;
+
+
+
+
+
+
+right: 10px;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+.navigation-menu a{
+
+
+
+
+
+
+display: block;
+
+
+
+
+
+
+margin: 10px 0;
+
+
+}
+
+
+
+
+
+
+.navigation-menu.active{
+
+
+
+
+
+
+display: block;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+<script>
+
+
+
+
+
+
+$(".menu-toggle-btn").click(function(){
+
+
+$(this).toggleClass("fa-times");
+
+
+$(".navigation-menu").toggleClass("active");
+
+
+});
+
+
+</script>
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body>
+<div id="img">
+<br><br>
+
+<center><p style="font-size: 70px; color: #F3F3F3 ;   font-family: Helvetica;   text-shadow: 4px 4px 10px black;"><b>Welcome to Bra<i class="fa fa-bolt" style="font-size: 45px;"></i>nStorm! </b></p>
+<br>
+<br><br>
+</div><div id="bck">
+
+<br><br>
+<center><div id="hi">
+<p style="font-size: 22px; ">Hi there! Welcome to BrainStorm! BrainStorm offers a large variety of games thats have been scientifically proven to improve some aspect of the brain. Some of our games target problem solving, memory and logical thinking. You can also try our schedules where we post new challenges each day! Want to give it a try? You can click that button below to get started <i class="fas fa-arrow-circle-down" style="font-size: 30.5px; color: dodgerblue;"></i>
+<style>
+#img {
+  background: linear-gradient(to right, #039AFB, dodgerblue);
+width: 100%;
+border-bottom-left-radius: 80px;
+border-bottom-right-radius: 80px;
+box-shadow: 0 0px 0px 0 rgba(0, 0,   0, 0.2), 0 15px 20px 0 #C3C3C3;
+
+}
+</style>
+</p>
+<br>
+<div class="button_cont" align="center"><a class="ex" href="main.html">&emsp;Lets get started!&emsp;</a></div>
+<br>
+<style>
+  .ex {
+border: none;
+background-image: url('https://www.clker.com/cliparts/d/3/9/7/1417604755746912667light%20contrasted%20blue%20and%20green%20wallpaper.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 70% 67%;
+color: white;
+font-weight: 100;
+padding: 30px;
+text-transform: uppercase;
+border-radius: 6px;
+
+font-size: 18px;
+display: inline-block;
+transition: all 0.3s ease 0s;
+}
+.ex:hover {
+color: #404040;
+font-weight: 700 ;
+letter-spacing: 9px;
+background-image: url('https://wallpapercave.com/wp/wp4465078.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+  background-size: 100% 100%;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.3s ease 0s;
+  }
+  </style>
+  </div></center>
+  <center><img src="assets/frontpage.png" alt=""style="height: 600px; width: 600px; border-radius: 6px;"></center>
+  <StyLE>
+    #hi {
+      width: 60%;
+    }
+    </style>
+  <br><br><br>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <center><div id="1main">
+
+
+
+    </div></center>
+    <style>
+      #1main {
+        background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+      }
+      @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+  @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+  :root {
+    --white: #fcfcfc;
+    --black: #252525;
+
+    --purple: #cf07fb;
+    --purple-gradient:  linear-gradient(to top,  #9733EE, #cf07fb);
+
+    --green: #36e77e;
+    --green-gradient: linear-gradient(to top, #061700, #49e691);
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .box {
+    background: linear-gradient(to right, #0EFF64, dodgerblue);
+    color: var(--black);
+    width: 100%   ;
+    height: 104%;
+    margin: 1rem;
+    margin-top:-10px;
+    border-radius: 10px;
+
+    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.3);
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+  }
+
+  .box:nth-of-type(even) {
+      transform: translateX(-400%);
+  }
+
+  .box.show {
+    transform: translateX(0);
+  }
+
+  .box h2 {
+    font-size: 36px;
+  }
+
+
+
+
+      </style>
+
+  </div>
+  <style>
+    #bck {
+      background-image: url('');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      }
+    </style>
+      <div class="box">
+
+  <br>
+
+        <center><p style="font-size: 70px; color: #F3F3F3 ;   font-family: Helvetica;   text-shadow: 4px 4px 10px black;"><b>Our games and bundles</b></p></center>
+        <br>
+  <center><div id="txt">
+        <p style="color: white; font-size: 20px;">At BrainStorm, we offer a variety of free games that challenge your mind. We also offer bundles of games. These bundles contain a variety of games designed to imporve and work a certan part of the brain. Our bundles include our memory bundle, our critical thinking and problem soving bundle, our processing information bundle and our spelling bundle. You can find links to our bundles and all of our games below.
+  <br><br>
+  <div class="button_cont" align="center"><a class="ex" href="main.html/#txtxtxtxtxtxttxtxtxtxtxt">&emsp;Our Games and Bundles&emsp;</a></div>
+
+  <br>
+  <center><img src="http://i.huffpost.com/gen/1299053/thumbs/o-BRAIN-GAMES-570.jpg?6" alt="" style="border-radius: 6px; width: 500px; height: 400px;"></center>
+  <br></div></center>
+  <style>
+    #txt {
+      width: 60%;
+    }
+    </style>
+
+      </div>
+      <div id="bruhidk">
+  <br><br>
+  <center><p style="font-size: 70px; color: #F3F3F3 ;   font-family: Helvetica;   text-shadow: 4px 4px 10px black;"><b>Daily games and activites</b></p></center>
+  <br>
+  <center><div id="txt">
+    <p style="color: black; font-size: 20px;">We offer a variety of new games and activites each day! You can play our english game and learn new vocabulary with brand new words and defenitions each day. On top of have daily games. Special games appear for a day before their replaced by the next daily game. Make sure that you check in annd play your daily game! Down below you can find todays daily game.</p>
+  <br></div></center>
+  <Center><a href="daily.html" class="btn">Our game of the day</a></center><br>
+  <center><img src="https://document-export.canva.com/1OwkQ/DAEUvp1OwkQ/21/thumbnail/lP9sNsUtFlH_hrXm6kPDxA-0001-16217289751.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20210130%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210130T160400Z&X-Amz-Expires=76402&X-Amz-Signature=0da51e7b21b2f0943fb8cda5b395840ca440c7670e39ba7a00f41e221f9fc807&X-Amz-SignedHeaders=host&response-expires=Sun%2C%2031%20Jan%202021%2013%3A17%3A22%20GMT" alt="" style="border-radius: 6px; width: 500px; height: 500px;"></center>
+  <style>
+  #bruhidk {
+    background-image: url('https://files.gamebanana.com/img/ss/gamefiles/5c2d22817224b.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+      margin-top: -15.5px;
+    }
+    </style>
+    <br>
+    </div>
+
+
+
+          <div class="box">
+    <br>
+    <center><p style="font-size: 70px; color: #F3F3F3 ;   font-family: Helvetica;   text-shadow: 4px 4px 10px black;"><b>Our speed challenge</b></p></center>
+    <br>
+    <center><div id="txt">
+        <p style="color: white; font-size: 20px;">One of our unique features is our speed challenge. This test will test your mind in different ways and evaluate your information. After the test, you can see your data on your strongest and weakest subjects. We can also reccoment different games and activites to play based off of that test! You can click the button below to take our speed challenge.
+    <br>
+          <a href="#" class="btn">Try the speed challenge</a>
+    <br><br>
+    <style>
+
+
+    h1 {
+      font-size: 38px;
+      font-size: 2.375rem;
+      font-style: italic;
+      text-shadow: 1px 1px 0 #f2f2f2, 2px 2px 0 #f2f2f2;
+    }
+
+    a.btn {
+      display: inline-block;
+      margin: 15px 15px 0;
+      padding: .6em 1.1em;
+      font-size: 26px;
+      font-size: 1.625rem;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: royalblue;
+      border-radius: 3px;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      -webkit-box-shadow: 0 0 0 -2px #cff09e, 0 0 0 -1px #fe4365;
+      box-shadow: 0 0 0 -2px #cff09e, 0 0 0 -1px #fe4365;
+      border: none;
+      -webkit-transition: -webkit-box-shadow .3s;
+      transition: box-shadow .3s;
+    }
+    a.btn:hover, a.btn:focus {
+      -webkit-box-shadow: 0 0 0 2px #cff09e, 0 0 0 4px #ff0364;
+      box-shadow: 0 0 0 2px #cff09e, 0 0 0 4px #ff0364;
+      -webkit-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+      transition-timing-function: cubic -bezier(0.6, 4, 0.3, 0.8);
+      -webkit-animation: gelatine 0.5s 1;
+      animation: gelatine 0.5s 1;
+    }
+
+
+    a.btn:active,
+    a.btn-secondary:active {
+      background: #4ecdc4;
+      -webkit-transition-duration: 0;
+      transition-duration: 0;
+      -webkit-box-shadow: 0 0 0 2px #cff09e, 0 0 0 4px #3ac7bd;
+      box-shadow: 0 0 0 2px #cff09e, 0 0 0 4px #3ac7bd;
+    }
+
+
+    @keyframes gelatine {
+      from, to {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+      }
+
+      25% {
+        -webkit-transform: scale(0.9, 1.1);
+        transform: scale(0.9, 1.1);
+      }
+
+      50% {
+        -webkit-transform: scale(1.1, 0.9);
+        transform: scale(1.1, 0.9);
+      }
+
+      75% {
+        -webkit-transform: scale(0.95, 1.05);
+        transform: scale(0.95, 1.05);
+      }
+
+      from, to {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+      }
+
+      25% {
+        -webkit-transform: scale(0.9, 1.1);
+        transform: scale(0.9, 1.1);
+      }
+
+      50% {
+        -webkit-transform: scale(1.1, 0.9);
+        transform: scale(1.1, 0.9);
+      }
+
+      75% {
+        -webkit-transform: scale(0.95, 1.05);
+        transform: scale(0.95, 1.05);
+      }
+    }
+    @-webkit-keyframes gelatine {
+      from, to {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+      }
+
+      25% {
+        -webkit-transform: scale(0.9, 1.1);
+        transform: scale(0.9, 1.1);
+      }
+
+      50% {
+        -webkit-transform: scale(1.1, 0.9);
+        transform: scale(1.1, 0.9);
+      }
+
+      75% {
+        -webkit-transform: scale(0.95, 1.05);
+        transform: scale(0.95, 1.05);
+      }
+
+      from, to {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+      }
+
+      25% {
+        -webkit-transform: scale(0.9, 1.1);
+        transform: scale(0.9, 1.1);
+      }
+
+      50% {
+        -webkit-transform: scale(1.1, 0.9);
+        transform: scale(1.1, 0.9);
+      }
+
+      75% {
+        -webkit-transform: scale(0.95, 1.05);
+        transform: scale(0.95, 1.05);
+      }
+    }
+
+    </style>
+
+
+
+
+
+          </div>
+
+
+
+
+
+      <script>
+      const boxes = document.querySelectorAll('.box');
+
+      window.addEventListener('scroll', checkBoxes);
+
+      checkBoxes(); // shows initial box(es)
+
+      function checkBoxes() {
+        const triggerBottom = (window.innerHeight / 5 * 4);
+
+        boxes.forEach(box => {
+          const boxTop = box.getBoundingClientRect().top;
+
+          if(boxTop < triggerBottom) {
+            box.classList.add('show');
+          } else {
+            box.classList.remove('show');
+          }
+        })
+      }
+      </script>
+    <center><img src="https://th.bing.com/th/id/Re540ed0db5a66c8ffffd0ec3bf58575f?rik=BsszKd18qvi6gg&riu=http%3a%2f%2fi.huffpost.com%2fgen%2f3020130%2fimages%2fo-STANDARDIZED-TEST-facebook.jpg&ehk=COCr8%2fTFqdwc1nrRlWTbWa5iz6U6rhBb1ucEOAI4qFo%3d&risl=&pid=ImgRaw" alt="" style="width: 600px; height: 400px;"></center><br>
+    </center>
+    </div>
+
+
+    <body class="body">
+    <footer id="red">
+      <h1 class="text">Bra&nbsp;<i class="fa fa-bolt" style="font-size: 55px;"></i>nStorm</h1><p class="text2"><a href="main.html#allgames">Games</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="contact.html">Contact</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="main.html#lastfinally">Featured</a></p>
+
+    </footer>
+    </body>
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Lato:900);
+
+    #red{
+      border-width: 15px;
+      background: linear-gradient(to right, lime, cyan);
+      bottom:0;
+      height:100%;
+      width:100%;
+      height:300px;
+      margin-top: -19px;
+      border-top: 10px solid royalblue;
+
+    }
+
+    .text {
+      color: dodgerblue;
+      font-family: Lato;
+      font-size: 80px;
+      text-align: center;
+    }
+
+    .text2 {
+      color: royalblue;
+      font-family: Lato;
+      font-size: 25px;
+      text-align: center;
+    }
+
+    .text3 {
+      color: #424242;
+      font-family: Lato;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    #page-footer {
+      display: none ;
+    }
+    </style>
+
+    </body>
+    </html>
